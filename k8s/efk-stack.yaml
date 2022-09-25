@@ -107,9 +107,10 @@ metadata:
 spec:
   ports:
     - port: 5601
+      nodePort: 30020
   selector:
     app: kibana
-  type: LoadBalancer
+  type: NodePort
 ---
 apiVersion: apps/v1
 kind: Deployment
